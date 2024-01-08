@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include "analyzer.h"
 
 double avg_price(double *data_array, int points){
     cout << "starting avg test" << std::endl;
@@ -35,11 +36,11 @@ double max_price(double *data_array, int points){
     return max;
 }
 
-int main(){
+/*int main(){
     cout << "starting tests" << std::endl;
     double test_array[3][2] = {{3.21, 900},{4.52, 1000},{5.67, 1200}};
     cout << min_price((double*)test_array, 3) << std::endl;
     cout << max_price((double*)test_array, 3) << std::endl;
     cout << avg_price((double*)test_array, 3) << std::endl;
     return 0;
-}
+}*/
