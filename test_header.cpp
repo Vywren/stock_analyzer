@@ -1,6 +1,6 @@
 #include <iostream>
-#include "analyzer.h"
 using namespace std;
+#include "analyzer.h"
 
 int main(){
     cout << "starting tests" << std::endl;

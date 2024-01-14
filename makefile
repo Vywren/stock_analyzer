@@ -1,10 +1,13 @@
-all:  test_header
+INCLUDE := -I.
+SRC = test_header.cpp \
+			analyzer.cpp
+#all:  test_header
 
-test_header.o: test_header.cpp analyzer.h
-	g++ -Wall -g -c test_header.cpp analyzer.h
+#test_header.o: test_header.cpp analyzer.h
+#	g++ -Wall -g -c test_header.cpp analyzer.h
 
-test_header: test_header.o analyzer.o
-	g++ -Wall -g -o test_header test_header.o analyzer.o
+test_header: 
+	g++ -Wall -o test_header $(INCLUDE) $(SRC) 
 
 #analyzer.o: analyzer.cpp
 #	g++ -Wall -g -c analyzer.cpp

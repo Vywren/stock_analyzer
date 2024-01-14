@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
-#include "analyzer.h"
+#ifndef ANALYZER_H
+#define ANALYZER_H
+
+// Rest of header file contents go here
+
+
 
 double avg_price(double *data_array, int points){
     cout << "starting avg test" << std::endl;
@@ -44,3 +49,5 @@ double max_price(double *data_array, int points){
     cout << avg_price((double*)test_array, 3) << std::endl;
     return 0;
 }*/
+
+#endif
