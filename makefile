@@ -1,7 +1,7 @@
 INCLUDE := -I.
 SRC = test_header.cpp \
 			analyzer.cpp
-#all:  test_header
+all:  test_header
 
 #test_header.o: test_header.cpp analyzer.h
 #	g++ -Wall -g -c test_header.cpp analyzer.h
@@ -16,4 +16,4 @@ test_header:
 #	g++ -Wall -g -o analyzer analyzer.o
 
 clean:
-	del analyzer.o analyzer.exe test_header.exe test_header.o
+	rm -rf analyzer.o analyzer test_header test_header.o
